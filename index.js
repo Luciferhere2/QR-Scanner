@@ -3,7 +3,7 @@ const qrcode = require("qrcode-terminal")
 const fs = require('fs')
 const pino = require('pino')
 const { delay , useSingleFileAuthState } = require("@adiwajshing/baileys")
-const { state, saveState } = useSingleFileAuthState('./session.alfa.json')
+const { state, saveState } = useSingleFileAuthState('./session.Lisa MD.json')
 
   function qr() {
 //------------------------------------------------------
@@ -11,7 +11,7 @@ const { state, saveState } = useSingleFileAuthState('./session.alfa.json')
     const session = makeWASocket({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Alien-Alfa','opera','1.0.0'],
+        browser: ['Lisa MD','opera','1.0.0'],
         auth: state,
         version
     })
